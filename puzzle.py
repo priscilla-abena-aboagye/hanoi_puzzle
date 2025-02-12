@@ -7,8 +7,8 @@ rods = {
     "C": []
 }
 
-def move():
+def move(n, source, auxiliary, target):
     print(rods)
 
 
-move()
+move(number_of_disks, "A", "B", "C")
