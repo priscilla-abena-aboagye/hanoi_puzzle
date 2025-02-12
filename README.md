@@ -1,1 +1,2 @@
 # Hanoi puzzle
+A loop-based approach is used to solve the tower of Hanoi mathematical puzzle. Then how to implement a recursive solution. Recursion is a programming approach that allows you to solve complicated computational problems with just a little code.
