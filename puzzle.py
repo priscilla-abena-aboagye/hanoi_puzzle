@@ -10,5 +10,5 @@ rods = {
 def move(n, source, auxiliary, target):
     print(rods)
 
-
+# initiate call from source A to target C with auxiliary B
 move(number_of_disks, "A", "B", "C")
