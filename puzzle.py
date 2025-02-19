@@ -8,7 +8,9 @@ rods = {
 }
 
 def move(n, source, auxiliary, target):
+
     # display starting configuration
+
     for i in range(number_of_moves):
         remainder = (i + 1) % 3
         if remainder == 1:
@@ -24,6 +26,10 @@ def move(n, source, auxiliary, target):
             else:
                 print(f"Moving disk {rods[target][-1]} from {target} to {source}")
                 rods[source].append(rods[target].pop())
+
+            # display the progress
+
+            print(rods)
         elif remainder == 2:
             print(f"Move {i + 1} allowed between {source} and {auxiliary}")
         elif remainder == 0:
@@ -31,4 +37,5 @@ def move(n, source, auxiliary, target):
     print(rods)
 
 # initiate call from source A to target C with auxiliary B
+
 move(number_of_disks, "A", "B", "C")
